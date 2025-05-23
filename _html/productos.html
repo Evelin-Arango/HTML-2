@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - Tienda de Patinetas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e1bee7 0%, #ce93d8 60%, #6a1a7a 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .productos-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #6a1a7a;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .productos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .producto-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(106,26,122,0.13);
+            width: 260px;
+            padding: 20px 16px 24px 16px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .producto-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(106,26,122,0.18);
+        }
+        .producto-card img {
+            width: 180px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 14px;
+        }
+        .producto-nombre {
+            font-size: 1.15rem;
+            color: #6a1a7a;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .producto-precio {
+            color: #333;
+            font-size: 1.08rem;
+            margin-bottom: 14px;
+        }
+        .btn-comprar {
+            background: linear-gradient(90deg, #6a1a7a 60%, #e0c3fc 100%);
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 28px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-comprar:hover {
+            background: linear-gradient(90deg, #4b1257 60%, #b39ddb 100%);
+            transform: scale(1.05);
+        }
+        .volver {
+            display: block;
+            margin: 40px auto 0 auto;
+            text-align: center;
+            color: #6a1a7a;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .volver:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="productos-container">
+        <h2>Nuestras Patinetas</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="../_img/rosa.png" alt="Patineta Rosa">
+                <div class="producto-nombre">Patineta Rosa LED</div>
+                <div class="producto-precio">$450.000</div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto-card">
+                <img src="../_img/black.png" alt="Patineta Negra">
+                <div class="producto-nombre">Patineta Black Pro</div>
+                <div class="producto-precio">$520.000</div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto-card">
+                <img src="../_img/hom.png" alt="Patineta Home">
+                <div class="producto-nombre">Patineta Home Edition</div>
+                <div class="producto-precio">$390.000</div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+             <div class="producto-card">
+                <img src="../_img/vel.png" alt="Patineta Home">
+                <div class="producto-nombre">Patineta Velocifreno 1600 W</div>
+                <div class="producto-precio">$790.000</div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto-card">
+                <img src="../_img/pink.png" alt="Patineta Home">
+                <div class="producto-nombre">Patineta Hoverboard Simate</div>
+                <div class="producto-precio">$650.000</div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto-card">
+                <img src="../_img/pat.png" alt="Patineta Home">
+                <div class="producto-nombre">Patineta Starker Flow</div>
+                <div class="producto-precio">$550.000</div>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+        <a class="volver" href="../.vscode/index.html">Volver al inicio</a>
+    </div>
+</body>
+</html>

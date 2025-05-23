@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Tienda de Patinetas</title>
+    <style>
+      
+    
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e1bee7 0%, #ce93d8 60%, #be90c7 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .contacto-container {
+            max-width: 420px;
+            margin: 60px auto 30px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(106,26,122,0.18);
+            padding: 36px 28px 24px 28px;
+            text-align: center;
+            position: relative;
+        }
+        .contacto-container::before {
+            content: '';
+            position: absolute;
+            top: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            background: url('../_img/pink.png') no-repeat center center/contain;
+            border-radius: 50%;
+            box-shadow: 0 2px 12px rgba(106,26,122,0.10);
+        }
+        h2 {
+            color: #6a1a7a;
+            margin-bottom: 16px;
+            margin-top: 60px;
+            font-size: 2rem;
+        }
+        p {
+            color: #333;
+            margin: 8px 0;
+            font-size: 1.08rem;
+        }
+        .contact-info {
+            margin: 24px 0 18px 0;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .contact-info span {
+            display: block;
+            color: #6a1a7a;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 32px;
+            background: linear-gradient(90deg, #6a1a7a 60%, #e0c3fc 100%);
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            font-size: 1.08rem;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(106,26,122,0.10);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #4b1257 60%, #b39ddb 100%);
+            transform: translateY(-2px) scale(1.04);
+        }
+        .whatsapp-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #25d366;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .whatsapp-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="contacto-container">
+        <h2>¡Contáctanos!</h2>
+        <p>¿Tienes dudas sobre nuestras patinetas, tu pedido o quieres cotizar?</p>
+        <div class="contact-info">
+            <span>Dirección:</span>
+            Calle 8A #8A-46 Sur, Nariño Sur
+            <span>Teléfono:</span>
+            <span> (+57) 311-262-6466 (WhatsApp)></span>
+
+          
+            <span>Email:</span>
+            <a href="mailto:luzmjn@yaoo.es">luzmjn@yaoo.es</a>
+        </div>
+      
+    </div>
+</body>
+</html>
